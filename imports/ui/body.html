@@ -1,0 +1,70 @@
+<body>
+  {{> Template.dynamic template=template_name}}
+</body>
+<template name="plcHolder">
+    {{view}}
+    {{#if view "title"}}
+        {{> titleScreen}}
+    {{else}}
+        {{> mainScreen}}
+    {{/if}} 
+</template>
+<template name="titleScreen">
+<div class="container">
+    <header>
+      <h2>A weird upper subtitle</h2>
+	  <br><h1>A generic science quiz!</h1>
+    </header>
+<div class="description">
+Up to 12 true/false statements! How many can you guess?
+</div>
+<input type="button" class="changeScreen" value="->" />
+<div class="chartContainer">
+<div class="chartSub"><h3>There</h3><div class="l1">was <br>- originally <br>- some text</div><div class="plusBall">+</div><div class="l2">in <br>- these <br>weird <br>coloured <br>boxes</div></div>
+<div class="chartSubMid"><div class="arrowBlock"></div><div class="arrowRight"></div></div>
+<div class="chartSub"><h3>I guess</h3><div class="r1">it <br>was</div><div class="plusBall">+</div><div class="r2">some kind of</div><div class="plusBall">+</div><div class="r3">fancy chart</div></div>
+</div>
+</div>
+</template>
+<template name="mainScreen">
+<div id="main" class="container">
+    <header>
+      <h2>A weird upper subtitle</h2>
+	  <br><h1>A generic science quiz!</h1>
+    </header>
+	<div class="gameHelp">
+	The tall boxes below contain descriptions of four (or five) fields of science (is history science? Not sure). Drag the names on top of the correct descriptions.
+	</div>
+	<div class="NWCBox">
+	Science, bro!
+	</div>
+	<div class="gameHelp" style="float: right ! important; padding-left: 0px ! important;">
+	You will also be given statements concerning all fields and your task is to choose whether the statement is true or false.
+	</div>
+	<br style="clear: left;" />
+	<div class="lines"><img border="0" height="31" hspace="0" src="/images/lines.png" width="851" /></div>
+	<div id="goalBG1" class="goalBoxBG"><div id="goalMark1" class="goalMark" style="display:none; background-color:#494949;">+</div><div id="goal1" class="goalBox"></div></div>
+	<div id="goalBG2" class="goalBoxBG"><div id="goalMark2" class="goalMark" style="display:none; background-color:#494949;">+</div><div id="goal2" class="goalBox"></div></div>
+	<div id="goalBG3" class="goalBoxBG"><div id="goalMark3" class="goalMark" style="display:none; background-color:#c1151b;">-</div><div id="goal3" class="goalBox"></div></div>
+	<div id="goalBG4" class="goalBoxBG"><div id="goalMark4" class="goalMark" style="display:none; background-color:#c1151b;">-</div><div id="goal4" class="goalBox"></div></div><br style="clear: left;" />
+	<div class="descriptionBox">A field of science that deals with the Earth's broad features, like continents and water areas. A larger scale version of geology.</div>
+	<div class="descriptionBox">A field that centers on past events, dealing with things such as:
+<ul type="disc">
+<li>Culture</li>
+<li>Politics</li>
+<li>Wars</li>
+<li>Religions</li>
+</ul>
+Can be useful when trying to predict future, too.</div>
+	<div class="descriptionBox">The field of science that tries to understand the world outside Earth: other planets, stars and galaxies.</div>
+	<div class="descriptionBox">The two fields that deal with the ways matter exists and interacts with each other.</div>
+<div id="move1" class="moveBoxBGL"><div class="moveBox">Geography</div></div>
+<div id="move2" class="moveBoxBG"><div class="moveBox">Astronomy</div></div>
+<div id="move3" class="moveBoxBG"><div class="moveBox">Physics & chemistry</div></div>
+<div id="move4" class="moveBoxBGR"><div class="moveBox">History</div></div>
+<div id="escape" class="buttonBox"><input type="hidden" class="changeScreen" value="->" /></div>
+	</div>
+</template>
+
+
+

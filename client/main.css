@@ -1,0 +1,552 @@
+/* CSS declarations go here */
+@import dist/dragula.css;
+body {
+  font-family: sans-serif;
+  background: linear-gradient(0deg, #5d54c9, #c1bee8);
+  background-attachment: fixed;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 7px;
+}
+
+.sweet-overlay {
+  background-color: white;
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  /* IE8 */
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: 100; }
+
+
+.alertType1 {
+  background-color: #554db5;
+  font-family: sans-serif;
+  width: 478px;
+  height: 400px;
+  padding: 17px;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #dbdbdb;
+  border-radius: 35px 0px 35px 0px;
+  box-shadow: 0px 4px 4px 5px #c1c1c1;
+  position: fixed;
+  box-shadow: 10px black;
+  left: 50%;
+  top: 50%;
+  margin-left: -256px;
+  margin-top: -200px;
+  overflow: hidden;
+  display: none;
+  z-index: 999; }
+  
+.innerAlertBox {
+	/*display: inline-block;
+	position: relative;
+	float: bottom;
+	background-color: red;
+	height: 50%;
+	width: 100%;*/
+	font-family: sans-serif;
+	width: 478px;
+	height: 400px;
+	padding: 17px;
+	padding-bottom: 17px !important;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #dbdbdb;
+	border-radius: 35px 0px 35px 0px;
+	box-shadow: 0px 4px 4px 5px #c1c1c1;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -256px;
+	margin-top: -200px;
+	overflow: hidden;
+	display: none;
+	z-index: 999;
+ }
+ 
+   .alertType1 h2 {
+    color: white;
+    font-size: 2.5em;
+	padding: 10px;
+	margin: 0px;
+	text-align: left;
+	line-height: 1em;
+    font-weight: 400;
+ }
+ 
+   .alertType1 p {
+	position: fixed;
+    color: white;
+	width: 478px;
+	height: 30%;
+	left: 50%;
+	bottom: 15%;
+	background-color: #2aa86d;
+    font-size: 2.5em;
+    text-align: left;
+	border-style: solid;
+	border-width: 8px;
+	border-color: #dbdbdb;
+	border-radius: 0px 0px 35px 0px;
+	box-shadow: 0px 5px 4px 1px #c1c1c1;
+    font-weight: 400;
+	line-height: 1em;
+    margin-top: 100px;
+    padding-left: 17px;
+	padding-right: 17px;
+	padding-top: 20px;
+	margin-left: -256px;
+	margin-top: -200px;
+ }
+	    .sweet-alert .sa-error-container p {
+      display: none; }
+   .alertType1 button {
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: none;
+	text-align: center;
+	height: 30px;
+	width: 120px;
+    font-size: 2.5em;
+    font-weight: 600;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 4px 35px;
+    margin: 26px 5px 0 5px;
+    cursor: pointer; }
+	
+	.alertType1 button:focus {
+      outline: none;
+      box-shadow: none; }
+    .alertType1 button:hover {
+      background-color: white; }
+    .alertType1 button:active {
+      background-color: white; }
+    .alertType1 button.cancel {
+      background-color: white; }
+    .alertType1 button.cancel:hover {
+        background-color: white; }
+    .alertType1 button.cancel:active {
+        background-color: white; }
+    .alertType1 button.cancel:focus {
+        box-shadow: none !important; }
+		
+.innerAlertBox button {
+	background-color: #38bc5e;
+	position: absolute;
+    color: white;
+    border: none;
+    box-shadow: none;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+    font-size: 2.5em;
+    font-weight: 600;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 5px;
+	margin-left: 200px;
+	margin-top: 0px;
+	bottom: 0px;
+    cursor: pointer;
+	z-index: 99999;
+}
+		
+.container {
+  max-width: 950px;
+  max-height: 550px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+  border-radius: 20px 0 0 0;
+}
+
+header {
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  border-radius: 20px 0 0 0;
+}
+
+input[type="button"] {
+	background-color: #2aa86d;
+    color: white;
+    border: none;
+    box-shadow: none;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+    font-size: 2.5em;
+    font-weight: 600;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 3px;
+    margin: 5px;
+	margin-left: 20px;
+	margin-top: 20px;
+    cursor: pointer;
+}
+
+.description {
+  position: relative;
+  font-size: 2em;
+  padding-left: 20px;
+  max-width: 50%;
+}
+
+.gameHelp {
+  position: relative;
+  float: left;
+  font-size: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 35%;
+}
+
+.NWCBox {
+  position: relative;
+  float: left;
+  color: white;
+  font-size: 2.7em;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 21px;
+  width: 20%;
+  height: 50px;
+  background-color: #494949;
+}
+
+.lines {
+  position: relative;
+  width: 100%;
+  height: 25px;
+}
+
+.lines img {
+	margin-left: auto;
+	margin-right: 60px;
+	display: block;
+}
+
+.goalBoxBG{
+  position: relative;
+  float: left;
+  padding: 5px;
+  margin-left: 22px;
+  margin-right: 22px;
+  border-style: solid;
+  border-width: 8px;
+  width: 17%;
+  height: 50px;
+  background-color: #7168d6;
+  border-color: #7168d6;
+}
+
+.goalMark{
+	position: relative;
+	color: white;
+	font-size: 3em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-left: -15px;
+	margin-top: 10px;
+	z-index: 90;
+}
+
+.goalBox {
+  position: relative;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  border-radius: 10px 0px 10px 0px;
+  height: 95%;
+  background-color: #554db5;
+}
+
+.moveBox {
+  position: relative;
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  border-radius: 8px 0px 10px 0px;
+  height: 95%;
+  background-color: #554db5;
+}
+
+.descriptionBox{
+  position: relative;
+  float: left;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-left: 22px;
+  margin-right: 22px;
+  width: 17%;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 0px 0px 20px 0px;
+  height: 300px;
+  border-color: #dbdbdb;
+}
+
+.moveBoxBGL{
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 10px;
+  border-radius: 0px 0px 0px 20px;
+  width: 18%;
+  height: 50px;
+  background-color: #dbdbdb;
+}
+
+.moveBoxBG{
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 0px 0px 0px 20px;
+  width: 18%;
+  height: 50px;
+  background-color: #dbdbdb;
+}
+
+.moveBoxBGR{
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  border-radius: 0px 0px 0px 20px;
+  width: 18%;
+  height: 50px;
+  background-color: #dbdbdb;
+}
+
+.buttonBox{
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#login-buttons {
+  display: block;
+}
+
+h1 {
+  font-size: 4em;
+  color: #2aa86d;
+  margin: 0;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2em;
+  color: #494949;
+  margin: 0;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 3.5em;
+  color: #494949;
+  margin: 6px;
+  display: inline-block;
+}
+
+.chartContainer{
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 80%;
+	margin-top: 20px;
+	margin-right: 60px;
+	
+}
+
+.chartSub{
+	position: relative;
+	float: left;
+	width: 42.5%;
+	height: 100%;
+	text-align: center;
+	
+}
+
+.chartSubMid{
+	position: relative;
+	float: left;
+	width: 15%;
+	height: 100%;
+}
+
+.arrowBlock{
+	float: left;
+	margin-left: 15px;
+	background-color: #f2621a;
+	width: 10px;
+	height: 55px;
+	margin-top: 195px;
+}
+
+.arrowRight {
+  float: left;
+  margin-top: 160px;
+  width: 0; 
+  height: 0; 
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  
+  border-left: 30px solid #f2621a;
+}
+
+.l1{
+	color: white;
+	background-color: #2aa86d;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1em;
+	padding-top: 15px;
+	width: 100%;
+	height: 90px;
+}
+
+.plusBall{
+	color: white;
+	background-color: #f2621a;
+	font-size: 5em;
+	font-weight: 600;
+	line-height: 1.5em;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.l2{
+	color: white;
+	background-color: #2aa86d;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1em;
+	padding-top: 50px;
+	width: 100%;
+	height: 160px;
+}
+
+.r1{
+	color: white;
+	background-color: #554db5;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1em;
+	padding-top: 15px;
+	width: 100%;
+	height: 55px;
+}
+
+.r2{
+	color: white;
+	background-color: #554db5;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1em;
+	padding-top: 25px;
+	width: 100%;
+	height: 50px;
+}
+
+.r3{
+	color: white;
+	background-color: #ea8220;
+	font-size: 3em;
+	font-weight: 600;
+	line-height: 1em;
+	padding-top: 35px;
+	width: 100%;
+	height: 75px;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+  font-size: 1em;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+	margin-left: 12px;
+	color: #ef6e23;
+}
+
+header .hide-completed {
+  float: right;
+}
+
+.toggle-private {
+  margin-left: 5px;
+}
+@media (max-width: 950px) {
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
+
